@@ -1,34 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muuvies | Home</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Muuvies</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Área do Cliente</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Área do Adm</a>
-        </li>
-      </ul>
+@extends('layout')
+@section('content')
+
+<div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Filmes em Destaque</h2>
+                <div class="card">
+                    <img src="/images/segredoanimais.webp" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Os segredos dos animais</h5>
+                        <p class="card-text">O touro Otis gosta de cantar e tocar como todos os outros animais do celeiro quando o agricultor está fora. No entanto, o bovino despreocupado deve encontrar coragem para ser um líder quando, inesperadamente, ele se encontra em uma posição de grande responsabilidade.</p>
+                        <a href="#" class="btn btn-primary">Agendar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Filmes Recentes</h2>
+                <div class="card">
+                    <img src="/images/vacatussa.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Nem que a vaca tussa</h5>
+                        <p class="card-text">A fazenda Caminho do Paraíso está em pânico, pois uma ação de despejo ameaça acabar com o local. Temendo ir para o matadouro, os animais da fazenda decidem ajudar a dona a conseguir a quantia necessária para pagar a hipoteca. O alvo escolhido pelo grupo é o perigoso bandido Alameda Slim, que tem uma grande recompensa reservada para quem capturá-lo.</p>
+                        <a href="#" class="btn btn-primary">Agendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-    
-  </div>
-</nav>
-</body>
-</html>
+@endsection

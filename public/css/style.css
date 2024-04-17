@@ -52,3 +52,17 @@ body {
 .footer a:hover {
     color: #f8f9fa;
 }
+
+.form-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.mb-3{
+    background-color: #ffffff;
+}
+
+#adc-f{
+    align-items: center;
+    align-self: center;
+}

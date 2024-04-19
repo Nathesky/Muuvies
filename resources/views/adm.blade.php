@@ -33,27 +33,26 @@
       </div>
       <div class="modal-body">
         <div class="mb-3">
-         <label for="exampleFormControlInput1" class="form-label">Título</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Título do filme">
-        </div>
-        <div class="mb-3">
-         <label for="exampleFormControlTextarea1" class="form-label">Sinopse</label>
-             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>  
-        <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Escolher imagem </label>
-        <input type="file" name="input-imagem" accept="image/*">
-        </div>
-      </div>
-
-
-
-
-      
-
-      <div class="modal-footer">
+        <form class="row g-3" method="POST" action="{{route('envia-banco-filme')}}" enctype="multipart/form-data">
+    @csrf
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Título</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Título do filme" name="titulo">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Sinopse</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="sinopse"></textarea>
+    </div>  
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Escolher imagem</label>
+        <input type="file" name="imagem" accept="image/*">
+    </div>
+    <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-primary">Adicionar</button>
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+    </div>
+</form> 
+
       </div>
     </div>
   </div>

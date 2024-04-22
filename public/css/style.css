@@ -2,7 +2,7 @@
 
 * {
     font-family: "IBM Plex Mono", monospace;
-    margin: 0
+    margin: 0;
 }
 
 body {
@@ -15,7 +15,6 @@ body {
 .main-content {
     flex: 1;
 }
-
 
 #item-txt {
     font-size: 1.1rem;
@@ -58,11 +57,11 @@ body {
     font-weight: 600;
 }
 
-.mb-3{
+.mb-3 {
     background-color: #ffffff;
 }
 
-#adc-f{
+#adc-f {
     align-items: center;
     align-self: center;
 }

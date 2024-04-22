@@ -1,7 +1,7 @@
   @extends('layout')
   @section('content')
 
-  <div class="container mt-5">
+  <div class="container mt-5" style="display: flex; flex: 1; min-height: 100vh">
       <table class="table mt-4">
           <thead>
               <tr>
